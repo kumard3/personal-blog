@@ -1,7 +1,7 @@
 const siteMetadata = {
   title: 'Blog',
   author: 'kumar deepanshu',
-  headerTitle: 'Cyphen Blog',
+  headerTitle: 'My Blog',
   description: 'A blog created with Next.js and Tailwind.css',
   language: 'en-us',
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
