@@ -3,7 +3,7 @@
     <channel>
       <title>Blog</title>
       <link>https://deepanshu.vercel.app/blog</link>
-      <description>My Personal Blog</description>
+      <description>A blog created with Next.js and Tailwind.css</description>
       <language>en-us</language>
       <managingEditor>kumardeepanshu157@gmail.com (kumar deepanshu)</managingEditor>
       <webMaster>kumardeepanshu157@gmail.com (kumar deepanshu)</webMaster>
