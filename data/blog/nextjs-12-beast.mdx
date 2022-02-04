@@ -1,0 +1,89 @@
+---
+title: 'Is Next.js 12 really a Beast?'
+date: '2021-11-11'
+tags: ['reactjs', 'nextjs ']
+draft: false
+summary: 'Next.js is an open-source web and app development framework built on top of Node.js to accelerate React-based web and app development.
+It even features server-side rendering and static website generation.'
+---
+
+# Is Next.js 12 really a Beast?
+
+In October 2021, Next.js has celebrated its fifth anniversary in San Fransisco, USA. Next.js has announced at the conference that, by far, this is their biggest release. About five years ago, they have introduced Next.js to the public. When their main goal was to create a zero-configuration React framework to simplify the overall developers’ experience. Still, now the goal is just the same, but the technology has evolved like a giant.
+
+It is an incredible achievement that how massive the community has grown over the years. This success took the hard works of Vercel, over 1800 individual contributor developers, companies from around the globe, and the support from industry partners like Google and the React team of Facebook.
+
+In our opinion, Next.js 12 is the most impressive version of Next.js. And after finishing this post, you will see if they have done it or not. So, without further delay, let’s jump straight into the realm of NextJS 12.
+
+## Brief on Next.js
+
+Next.js is an open-source web and app development framework built on top of Node.js to accelerate React-based web and app development.
+It even features server-side rendering and static website generation.
+Next.js is the perfect magic for your site or app since it is very quick and readily checked by robots, providing the greatest user experience.
+
+You can use Next.js to make calls. You don't need to set up a server for yourself. Pre-render your page. This page is on a website. The client's browser is used to build web apps. Next.js renders the website before it reaches the client.
+
+What do we get from this? Rendering in the client's browser can cause problems. Extending page loading times can harm the site.
+
+## We will be talking about the topics mentioned.
+
+- Rust Compiler
+- Middleware (beta)
+- React 18 Support
+  -Server-side streaming
+- React server components
+- Bot-Aware ISR Fallback
+- Smaller images using AVIF
+  -Output File Tracing
+
+## Faster builds and Fast Refresh with Rust compiler
+
+Next.js 12 has a Rust compiler. The Next.js framework has a new addition. The Rust can take advantage of native compilation. SWC is an open platform for fast tooling. They made it 5x faster for production and it was a 3x refresh. This is 17x faster than Babel.
+
+##I ntroducing Middleware
+Middleware allows you to use code. You can run code even before a request is made. Depending on the request, you can respond in a variety of ways. Middleware uses a strict run time. Which supports the standard APIs. For example, fetch.
+
+Here is a list of places where Middleware can be used. It can be used for anything that shares logic across multiple pages.
+
+- Authentication
+- Bot protection
+- Redirects and rewrites
+- Handling unsupported browsers
+- Feature flags and A/B tests
+- Server-side analytics
+- Advanced i18n routing requirements
+- Logging
+
+## Preparing for React 18
+
+Next.js is working hand in hand with the React team of Facebook. So that React’s new version, React 18, can sync well with Next.js. Try these features by using the command.
+
+`npm install react@alpha react-dom@alpha`
+
+## Server-Side Streaming
+
+There is server-side streaming. Next.js is working to improve the features. It has built-in support for server-side Suspense. It will allow you to render pages on the server. It is an experiment. The same strict runtime will be used by SSR once enabled. The experimental flag can be used to enable this.
+
+## React Server Components
+
+You can use the components of the server. The components are on the server. The server components are different from the server rendering. Zero client-side Javascript is required to allow the page to render faster.
+
+Next.js 12 allows you to fetch data at the component level. It is possible to make things simpler by using components from the server. Special functions will no longer be required. This is consistent with the model of fetching data with your components.
+
+## ES Modules Support and URL Imports
+
+You can change any Next.js page to a server. It is used to create a server component and import client components. The client components can be added with upvotes because they will become interactive.
+
+## Bot-Aware ISR Fallback
+
+Incremental static regeneration with fallback: true renders a fallback state before rendering the page contents on the first request to a page that was not generated yet. To block the page from loading, you need to use a fallback. Search bots will automatically render ISR pages when they use Next 12. It will restrict crawling.
+
+## Smaller images using AVIF
+
+The built-in image optimizer supports AVIF images. It allows 20 per cent smaller images. AVIF images can take a longer time than WebP. The new images property in next.config.js was the reason for the opt-in.
+
+The list format is used to determine the image format. If the browser supports AVIF, it will be served. WebP will be served if the browser supports it. The original image format is used if neither format supports it.
+
+## Output File Tracing
+
+The Next.js organization has introduced a target option. It used to be possible to put Next.js pages as Javascript bundles. It is done by using webpack. This was not ideal. They created a new account called the @vercel/nft. It has been used on all of the deployments. They are making improvements to the Next.js framework by default.
