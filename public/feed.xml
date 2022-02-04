@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Blog</title>
+      <link>https://tailwind-nextjs-starter-blog.vercel.app/blog</link>
+      <description>A blog created with Next.js and Tailwind.css</description>
+      <language>en-us</language>
+      <managingEditor>address@yoursite.com (kumar deepanshu)</managingEditor>
+      <webMaster>address@yoursite.com (kumar deepanshu)</webMaster>
+      <lastBuildDate>Thu, 11 Nov 2021 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://tailwind-nextjs-starter-blog.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/nextjs-12-beast</guid>
+    <title>Is Next.js 12 really a Beast?</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/nextjs-12-beast</link>
+    <description>Next.js is an open-source web and app development framework built on top of Node.js to accelerate React-based web and app development. It even features server-side rendering and static website generation.</description>
+    <pubDate>Thu, 11 Nov 2021 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (kumar deepanshu)</author>
+    <category>reactjs</category><category>nextjs </category>
+  </item>
+
+    </channel>
+  </rss>
