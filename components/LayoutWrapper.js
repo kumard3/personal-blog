@@ -7,15 +7,14 @@ import headerNavLinks from '@/data/headerNavLinks'
 import Link from './Link'
 import SectionContainer from './SectionContainer'
 import Footer from './Footer'
-import MobileNav from './MobileNav'
-import ThemeSwitch from './ThemeSwitch'
+
 import { FramerNav } from './framerNav'
 
 const LayoutWrapper = ({ children }) => {
   const scrollDirection = useScrollDirection('down')
   return (
     <SectionContainer>
-      <div className="flex flex-col justify-between h-screen">
+      <div className="flex flex-col justify-between min-h-screen ">
         <header className="flex items-center justify-between py-[.9rem] sm:py-10">
           <div>
             <Link href="/" aria-label="Deepanshu Blog">
@@ -25,20 +24,20 @@ const LayoutWrapper = ({ children }) => {
                     <div className="mr-3">
                       <img src="/static/images/logo.png" className="h-20" />
                     </div>
-                    {typeof siteMetadata.headerTitle === 'string' ? (
+                    {/* {typeof siteMetadata.headerTitle === 'string' ? (
                       <div className="hidden h-6 text-2xl font-semibold sm:block">
                         {siteMetadata.headerTitle}
                       </div>
                     ) : (
                       siteMetadata.headerTitle
-                    )}
+                    )} */}
                   </div>
                 </Link>
               </div>
             </Link>
           </div>
-          <div className="flex items-center text-base leading-5">
-            <div className="hidden sm:block">
+          <div>
+            {/* <div className="hidden sm:block text-xl">
               {headerNavLinks.map((link) => (
                 <Link
                   key={link.title}
@@ -48,7 +47,21 @@ const LayoutWrapper = ({ children }) => {
                   {link.title}
                 </Link>
               ))}
-            </div>
+            </div> */}
+              <nav className="hidden sm:flex space-x-10 items-center">
+                {headerNavLinks.map((link)  => {
+                  return (
+                    <Link  
+                    key={link.title}
+                    href={link.href}>
+                      <span className="min-h-[3rem] px-4 text-2xl font-bold active:scale-105 scale-110 active:transition-all duration-50 active:bg-white/10 hover:bg-white/10 flex justify-center items-center rounded-xl">
+                      {link.title}
+            
+                      </span>
+                    </Link>
+                  );
+                })}
+              </nav>
             <div className="flex relative " >
             {/* <ThemeSwitch /> */}
             <div className="sm:hidden top-[-40px] relative  ">
