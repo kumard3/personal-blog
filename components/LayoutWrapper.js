@@ -51,7 +51,7 @@ const LayoutWrapper = ({ children }) => {
             </div>
             <div className="flex relative " >
             {/* <ThemeSwitch /> */}
-            <div className="sm:hidden top-[-34px] relative  ">
+            <div className="sm:hidden top-[-40px] relative  ">
               <FramerNav navData={headerNavLinks} scrollDirection={scrollDirection} />
             </div>
             </div>

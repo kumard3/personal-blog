@@ -14,7 +14,7 @@ const variants = {
 export const Navigation = ({navData,isOpen}) => (
   <motion.ul variants={variants} className={`ul `}>
     {navData.map((i) => (
-      <MenuItem name={i.name} href={i.href} key={i.name} />
+      <MenuItem name={i.title} href={i.href} key={i.name} />
     ))}
   </motion.ul>
 );

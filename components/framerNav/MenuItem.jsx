@@ -25,7 +25,7 @@ export const MenuItem = ({ name, href }) => {
         variants={variants}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
-        className="li border rounded-xl px-6 py-4 w-full"
+        className="li border rounded-lg px-6 py-4 w-[260px] font-bold text-3xl" 
       >
         {/* <div className="icon-placeholder" style={style} /> */}
         {name}

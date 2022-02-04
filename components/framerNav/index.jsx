@@ -39,14 +39,6 @@ export const FramerNav = ({ navData, scrollDirection }) => {
     
   }
 
-  useEffect(() => {
-  
-      if (scrollDirection === "down") {
-        settoggleOpen(false)
-      }
-
-
-  }, [scrollDirection === "up"]);
 
   useOnClickOutside(containerRef,() => settoggleOpen(false));
   
@@ -57,7 +49,7 @@ export const FramerNav = ({ navData, scrollDirection }) => {
       animate={isOpen ? "open" : "closed"}
       custom={height}
       ref={containerRef}
-      className="nav "
+      className="nav z-10 "
     >
       <motion.div className="background border-2 " variants={sidebar} />
       <div className={`${isOpen === true ? "":"hidden"} w-full flex items-center `} >
