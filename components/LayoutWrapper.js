@@ -1,3 +1,7 @@
+/* eslint-disable @next/next/link-passhref */
+import React, { useRef, useState } from 'react'
+import useOnClickOutside from '../hooks/useOnClickOutside'
+import useScrollDirection from '../hooks/useScrollDirection'
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
 import Link from './Link'
@@ -5,29 +9,31 @@ import SectionContainer from './SectionContainer'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
+import { FramerNav } from './framerNav'
 
 const LayoutWrapper = ({ children }) => {
+  const scrollDirection = useScrollDirection('down')
   return (
     <SectionContainer>
       <div className="flex flex-col justify-between h-screen">
-        <header className="flex items-center justify-between py-10">
+        <header className="flex items-center justify-between py-[.9rem] sm:py-10">
           <div>
             <Link href="/" aria-label="Deepanshu Blog">
               <div className="flex items-center justify-between">
-              <Link href="/" aria-label={siteMetadata.headerTitle}>
-              <div className="flex items-center justify-between">
-                <div className="mr-3">
-                 <img src="/static/images/logo.png"  className="h-20"/>
-                </div>
-                {typeof siteMetadata.headerTitle === 'string' ? (
-                  <div className="hidden h-6 text-2xl font-semibold sm:block">
-                    {siteMetadata.headerTitle}
+                <Link href="/" aria-label={siteMetadata.headerTitle}>
+                  <div className="flex items-center justify-between">
+                    <div className="mr-3">
+                      <img src="/static/images/logo.png" className="h-20" />
+                    </div>
+                    {typeof siteMetadata.headerTitle === 'string' ? (
+                      <div className="hidden h-6 text-2xl font-semibold sm:block">
+                        {siteMetadata.headerTitle}
+                      </div>
+                    ) : (
+                      siteMetadata.headerTitle
+                    )}
                   </div>
-                ) : (
-                  siteMetadata.headerTitle
-                )}
-              </div>
-            </Link>
+                </Link>
               </div>
             </Link>
           </div>
@@ -43,8 +49,12 @@ const LayoutWrapper = ({ children }) => {
                 </Link>
               ))}
             </div>
-            <ThemeSwitch />
-            <MobileNav />
+            <div className="flex relative " >
+            {/* <ThemeSwitch /> */}
+            <div className="sm:hidden top-[-34px] relative  ">
+              <FramerNav navData={headerNavLinks} scrollDirection={scrollDirection} />
+            </div>
+            </div>
           </div>
         </header>
         <main className="mb-auto">{children}</main>
