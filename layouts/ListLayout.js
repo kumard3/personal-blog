@@ -52,8 +52,8 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
           {displayPosts.map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
             return (
-              <Link href={`/blog/${slug}`} className="text-gray-900 dark:text-gray-100">
-                <li key={slug} className="py-4 mt-3 bg-gray-900 p-3 rounded-xl xl:bg-transparent  xl:p-0 xl:rounded-none ">
+              <Link key={slug} href={`/blog/${slug}`} className="text-gray-900 dark:text-gray-100">
+                <li className="py-4 mt-3 bg-gray-900 p-3 rounded-xl xl:bg-transparent  xl:p-0 xl:rounded-none ">
                   <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
                     <dl>
                       <dt className="sr-only">Published on</dt>
