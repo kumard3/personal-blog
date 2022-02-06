@@ -1,6 +1,6 @@
-import * as React from "react";
-import { motion } from "framer-motion";
-import Link from "next/link";
+import * as React from 'react'
+import { motion } from 'framer-motion'
+import Link from 'next/link'
 const variants = {
   open: {
     y: 0,
@@ -16,7 +16,7 @@ const variants = {
       y: { stiffness: 1000 },
     },
   },
-};
+}
 
 export const MenuItem = ({ name, href }) => {
   return (
@@ -25,11 +25,11 @@ export const MenuItem = ({ name, href }) => {
         variants={variants}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
-        className="li border rounded-lg px-6 py-4 w-[260px] font-bold text-3xl" 
+        className="li border rounded-lg px-6 py-4 w-[260px] font-bold text-3xl"
       >
         {/* <div className="icon-placeholder" style={style} /> */}
         {name}
       </motion.li>
     </Link>
-  );
-};
+  )
+}

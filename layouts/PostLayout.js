@@ -1,28 +1,28 @@
-import Link from "@/components/Link";
-import PageTitle from "@/components/PageTitle";
-import ScrollTop from "@/components/ScrollTop";
-import SectionContainer from "@/components/SectionContainer";
-import { BlogSEO } from "@/components/SEO";
-import Image from "@/components/Image";
-import Tag from "@/components/Tag";
-import siteMetadata from "@/data/siteMetadata";
-import Comments from "@/components/comments";
-import { useEffect, useRef, useState } from "react";
-import LeftNav from "@/components/LeftNav";
+import Link from '@/components/Link'
+import PageTitle from '@/components/PageTitle'
+import ScrollTop from '@/components/ScrollTop'
+import SectionContainer from '@/components/SectionContainer'
+import { BlogSEO } from '@/components/SEO'
+import Image from '@/components/Image'
+import Tag from '@/components/Tag'
+import siteMetadata from '@/data/siteMetadata'
+import Comments from '@/components/comments'
+import { useEffect, useRef, useState } from 'react'
+import LeftNav from '@/components/LeftNav'
 
 const twitterShare = (slug) =>
   `https://twitter.com/intent/tweet?url=${encodeURIComponent(
     `${siteMetadata.siteUrl}/blog/${slug}`
-  )}`;
+  )}`
 const facebookShare = (slug) =>
   `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
     `${siteMetadata.siteUrl}/blog/${slug}`
-  )}`;
+  )}`
 
-const postDateTemplate = { weekday: "long", year: "numeric", month: "long", day: "numeric" };
+const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children, toc }) {
-  const { slug, fileName, date, title, tags, readingTime } = frontMatter;
+  const { slug, fileName, date, title, tags, readingTime } = frontMatter
   return (
     <SectionContainer>
       <BlogSEO
@@ -88,7 +88,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
           </header>
           <div
             className="pb-8 divide-y divide-gray-200 xl:divide-y-0 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6"
-            style={{ gridTemplateRows: "auto 1fr" }}
+            style={{ gridTemplateRows: 'auto 1fr' }}
           >
             <dl className="pt-6 pb-10 xl:pt-11 xl:border-b xl:border-gray-200 xl:dark:border-gray-700">
               <dt className="sr-only">Authors</dt>
@@ -115,7 +115,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                               href={author.twitter}
                               className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                             >
-                              {author.twitter.replace("https://twitter.com/", "@")}
+                              {author.twitter.replace('https://twitter.com/', '@')}
                             </Link>
                           )}
                         </dd>
@@ -128,7 +128,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
               <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div>
 
-            <div className="pt-[10rem]"> </div>
+              <div className="pt-[10rem]"> </div>
             </div>
             <footer>
               <div className="text-sm font-medium leading-5 divide-gray-200 xl:divide-y dark:divide-gray-700 xl:col-start-1 xl:row-start-2">
@@ -185,7 +185,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
         </div>
       </article>
     </SectionContainer>
-  );
+  )
 }
 
 function TocComponent({ toc }) {
@@ -244,41 +244,41 @@ function TocComponent({ toc }) {
 }
 
 const useIntersectionObserver = (setActiveId) => {
-  const headingElementsRef = useRef({});
+  const headingElementsRef = useRef({})
   useEffect(() => {
     const callback = (headings) => {
       headingElementsRef.current = headings.reduce((map, headingElement) => {
-        map[headingElement.target.id] = headingElement;
-        return map;
-      }, headingElementsRef.current);
+        map[headingElement.target.id] = headingElement
+        return map
+      }, headingElementsRef.current)
 
-      const visibleHeadings = [];
+      const visibleHeadings = []
       Object.keys(headingElementsRef.current).forEach((key) => {
-        const headingElement = headingElementsRef.current[key];
-        if (headingElement.isIntersecting) visibleHeadings.push(headingElement);
-      });
+        const headingElement = headingElementsRef.current[key]
+        if (headingElement.isIntersecting) visibleHeadings.push(headingElement)
+      })
 
-      const getIndexFromId = (id) => headingElements.findIndex((heading) => heading.id === id);
+      const getIndexFromId = (id) => headingElements.findIndex((heading) => heading.id === id)
 
       if (visibleHeadings.length === 1) {
-        setActiveId(visibleHeadings[0].target.id);
+        setActiveId(visibleHeadings[0].target.id)
       } else if (visibleHeadings.length > 1) {
         const sortedVisibleHeadings = visibleHeadings.sort(
           (a, b) => getIndexFromId(a.target.id) > getIndexFromId(b.target.id)
-        );
-        setActiveId(sortedVisibleHeadings[0].target.id);
+        )
+        setActiveId(sortedVisibleHeadings[0].target.id)
       }
-    };
+    }
 
     const observer = new IntersectionObserver(callback, {
-      rootMargin: "0px 0px -40% 0px",
+      rootMargin: '0px 0px -40% 0px',
       threshold: 0.4,
-    });
+    })
 
-    const headingElements = Array.from(document.querySelectorAll("h1, h2, h3"));
+    const headingElements = Array.from(document.querySelectorAll('h1, h2, h3'))
 
-    headingElements.forEach((element) => observer.observe(element));
+    headingElements.forEach((element) => observer.observe(element))
 
-    return () => observer.disconnect();
-  }, [setActiveId]);
-};
+    return () => observer.disconnect()
+  }, [setActiveId])
+}

@@ -24,8 +24,11 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage }) => {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={twImage} />
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6978760910049416"
-     crossorigin="anonymous"></script>
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6978760910049416"
+        crossOrigin="anonymous"
+      ></script>
     </Head>
   )
 }
