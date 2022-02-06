@@ -20,7 +20,7 @@ const LayoutWrapper = ({ children }) => {
                 <Link href="/" aria-label={siteMetadata.headerTitle}>
                   <div className="flex items-center justify-between">
                     <div className="mr-3 ">
-                      <img src="/static/images/logo.png" width="120" height="120" />
+                      <img src="/static/images/logo.png" width="120" height="120" alt="logo" />
                     </div>
                   </div>
                 </Link>
