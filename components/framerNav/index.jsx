@@ -31,7 +31,6 @@ export const FramerNav = ({ navData, scrollDirection }) => {
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
 
-  const ref = useRef(null);
 
   
   function ToggleOpen() {
