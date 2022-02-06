@@ -1,6 +1,4 @@
-/* eslint-disable @next/next/link-passhref */
-import React, { useRef, useState } from 'react'
-import useOnClickOutside from '../hooks/useOnClickOutside'
+import React from 'react'
 import useScrollDirection from '../hooks/useScrollDirection'
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
@@ -24,49 +22,27 @@ const LayoutWrapper = ({ children }) => {
                     <div className="mr-3">
                       <img src="/static/images/logo.png" className="h-20" />
                     </div>
-                    {/* {typeof siteMetadata.headerTitle === 'string' ? (
-                      <div className="hidden h-6 text-2xl font-semibold sm:block">
-                        {siteMetadata.headerTitle}
-                      </div>
-                    ) : (
-                      siteMetadata.headerTitle
-                    )} */}
                   </div>
                 </Link>
               </div>
             </Link>
           </div>
           <div>
-            {/* <div className="hidden sm:block text-xl">
-              {headerNavLinks.map((link) => (
-                <Link
-                  key={link.title}
-                  href={link.href}
-                  className="p-1 font-medium text-gray-900 sm:p-4 dark:text-gray-100"
-                >
-                  {link.title}
-                </Link>
-              ))}
-            </div> */}
-              <nav className="hidden sm:flex space-x-10 items-center">
-                {headerNavLinks.map((link)  => {
-                  return (
-                    <Link  
-                    key={link.title}
-                    href={link.href}>
-                      <span className="min-h-[3rem] px-4 text-2xl font-bold active:scale-105 scale-110 active:transition-all duration-50 active:bg-white/10 hover:bg-white/10 flex justify-center items-center rounded-xl">
+            <nav className="hidden sm:flex space-x-10 items-center">
+              {headerNavLinks.map((link) => {
+                return (
+                  <Link key={link.title} href={link.href}>
+                    <span className="min-h-[3rem] px-4 text-2xl font-bold active:scale-105 scale-110 active:transition-all duration-50 active:bg-white/10 hover:bg-white/10 flex justify-center items-center rounded-xl">
                       {link.title}
-            
-                      </span>
-                    </Link>
-                  );
-                })}
-              </nav>
-            <div className="flex relative " >
-            {/* <ThemeSwitch /> */}
-            <div className="sm:hidden top-[-40px] relative  ">
-              <FramerNav navData={headerNavLinks} scrollDirection={scrollDirection} />
-            </div>
+                    </span>
+                  </Link>
+                )
+              })}
+            </nav>
+            <div className="flex relative ">
+              <div className="sm:hidden top-[-40px] relative  ">
+                <FramerNav navData={headerNavLinks} scrollDirection={scrollDirection} />
+              </div>
             </div>
           </div>
         </header>
