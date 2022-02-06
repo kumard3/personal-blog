@@ -1,6 +1,6 @@
 ---
 name: Kumar Deepanshu
-avatar: /static/images/avatar.png
+avatar: /static/images/logo.png
 occupation: Front-end Developer
 company: cyphen innovations
 email: kumardeepanshu157@gmail.com

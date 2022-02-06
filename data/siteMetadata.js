@@ -7,7 +7,7 @@ const siteMetadata = {
   siteUrl: 'https://deepanshu.vercel.app',
   siteRepo: 'https://github.com/kumard3/personal-blog',
   siteLogo: '/static/images/logo.png',
-  image: '/static/images/avatar.png',
+  image: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
   email: 'kumardeepanshu157@gmail.com',
   github: 'https://github.com/kumard3',
