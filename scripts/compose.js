@@ -108,14 +108,14 @@ inquirer
       if (err) {
         throw err
       } else {
-        console.log(`Blog post generated successfully at ${filePath}`)
+        // console.log(`Blog post generated successfully at ${filePath}`)
       }
     })
   })
   .catch((error) => {
     if (error.isTtyError) {
-      console.log("Prompt couldn't be rendered in the current environment")
+      // console.log("Prompt couldn't be rendered in the current environment")
     } else {
-      console.log('Something went wrong, sorry!')
+      // console.log('Something went wrong, sorry!')
     }
   })

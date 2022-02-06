@@ -37,7 +37,6 @@ export const FramerNav = ({ navData, scrollDirection }) => {
 
   useOnClickOutside(containerRef, () => settoggleOpen(false))
 
-  // console.log(isOpen);
   return (
     <motion.nav
       initial={false}

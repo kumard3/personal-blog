@@ -99,7 +99,7 @@ app.prepare().then(() => {
     // log message if present
     const msg = req.body.message
     const color = req.body.color
-    msg && console.log(color ? chalk[color](msg) : msg)
+    msg
 
     // reload the nextjs app
     app.server.hotReloader.send('building')
@@ -115,6 +115,5 @@ app.prepare().then(() => {
   // fire it up
   server.listen(port, (err) => {
     if (err) throw err
-    console.log(`> Ready on http://localhost:${port}`)
   })
 })
