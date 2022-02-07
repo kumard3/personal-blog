@@ -30,7 +30,7 @@ class MyDocument extends Document {
           <script
             async
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6978760910049416"
-            crossOrigin="anonymous"
+            crossorigin="anonymous"
           ></script>
         </Head>
         <body className="antialiased text-white  bg-primary-600 ">
