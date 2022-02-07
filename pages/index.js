@@ -44,9 +44,9 @@ export default function Home({ posts }) {
                           <div>
                             <h2 className="text-2xl font-bold leading-8 tracking-tight">{title}</h2>
                             <div className="flex flex-wrap">
-                              {tags.map((tag) => (
+                              {/* {tags.map((tag) => (
                                 <Tag key={tag} text={tag} />
-                              ))}
+                              ))} */}
                             </div>
                           </div>
                           <div className="prose max-w-none text-gray-400">{summary}</div>
