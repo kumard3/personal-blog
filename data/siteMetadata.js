@@ -4,7 +4,7 @@ const siteMetadata = {
   headerTitle: 'My Blog',
   description: 'A blog created with Next.js and Tailwind.css',
   language: 'en-us',
-  siteUrl: 'https://deepanshu.vercel.app',
+  siteUrl: 'https://deepanshu-blog.vercel.app',
   siteRepo: 'https://github.com/kumard3/personal-blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/logo.png',
