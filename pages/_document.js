@@ -39,6 +39,21 @@ class MyDocument extends Document {
           ></script>
         </Head>
         <body className="antialiased text-white  bg-primary-600 ">
+          <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6978760910049416"
+            crossorigin="anonymous"
+          ></script>
+          {/* responsive ad */}
+          <ins
+            class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-6978760910049416"
+            data-ad-slot="9587529067"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          ></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
           <Main />
           <NextScript />
         </body>
