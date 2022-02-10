@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://deepanshu.vercel.app/about</loc>
-  </url>
-
-  <url>
     <loc>https://deepanshu.vercel.app/blog</loc>
   </url>
 
@@ -21,10 +17,30 @@
   </url>
 
   <url>
-    <loc>https://deepanshu.vercel.app/tags/reactjs</loc>
+    <loc>https://deepanshu.vercel.app/blog/responsive-navBar</loc>
+  </url>
+
+  <url>
+    <loc>https://deepanshu.vercel.app/tags/navbar</loc>
   </url>
 
   <url>
     <loc>https://deepanshu.vercel.app/tags/nextjs-</loc>
+  </url>
+
+  <url>
+    <loc>https://deepanshu.vercel.app/tags/nextjs</loc>
+  </url>
+
+  <url>
+    <loc>https://deepanshu.vercel.app/tags/responsive</loc>
+  </url>
+
+  <url>
+    <loc>https://deepanshu.vercel.app/tags/tailwindcss</loc>
+  </url>
+
+  <url>
+    <loc>https://deepanshu.vercel.app/tags/reactjs</loc>
   </url>
 </urlset>
