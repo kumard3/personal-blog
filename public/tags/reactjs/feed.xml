@@ -2,18 +2,18 @@
   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
       <title>Blog</title>
-      <link>https://deepanshu.vercel.app/blog</link>
+      <link>https://deepanshu-blog.vercel.app/blog</link>
       <description>A blog created with Next.js and Tailwind.css</description>
       <language>en-us</language>
       <managingEditor>kumardeepanshu157@gmail.com (kumar deepanshu)</managingEditor>
       <webMaster>kumardeepanshu157@gmail.com (kumar deepanshu)</webMaster>
       <lastBuildDate>Mon, 07 Feb 2022 00:00:00 GMT</lastBuildDate>
-      <atom:link href="https://deepanshu.vercel.app/tags/reactjs/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://deepanshu-blog.vercel.app/tags/reactjs/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>https://deepanshu.vercel.app/blog/responsive-navBar</guid>
+    <guid>https://deepanshu-blog.vercel.app/blog/responsive-navBar</guid>
     <title>Responsive NavBar using Tailwind-css and React</title>
-    <link>https://deepanshu.vercel.app/blog/responsive-navBar</link>
+    <link>https://deepanshu-blog.vercel.app/blog/responsive-navBar</link>
     <description>Responsive NavBar using Tailwind-css and React</description>
     <pubDate>Mon, 07 Feb 2022 00:00:00 GMT</pubDate>
     <author>kumardeepanshu157@gmail.com (kumar deepanshu)</author>
@@ -21,9 +21,9 @@
   </item>
 
   <item>
-    <guid>https://deepanshu.vercel.app/blog/nextjs-12-beast</guid>
+    <guid>https://deepanshu-blog.vercel.app/blog/nextjs-12-beast</guid>
     <title>Is Next.js 12 really a Beast?</title>
-    <link>https://deepanshu.vercel.app/blog/nextjs-12-beast</link>
+    <link>https://deepanshu-blog.vercel.app/blog/nextjs-12-beast</link>
     <description>Next.js is an open-source web and app development framework built on top of Node.js to accelerate React-based web and app development. It even features server-side rendering and static website generation.</description>
     <pubDate>Thu, 11 Nov 2021 00:00:00 GMT</pubDate>
     <author>kumardeepanshu157@gmail.com (kumar deepanshu)</author>
