@@ -47,7 +47,6 @@ class MyDocument extends Document {
           {/* responsive ad */}
           <ins
             class="adsbygoogle"
-            style="display:block"
             data-ad-client="ca-pub-6978760910049416"
             data-ad-slot="9587529067"
             data-ad-format="auto"

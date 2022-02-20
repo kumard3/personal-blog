@@ -11,6 +11,16 @@
       <atom:link href="https://deepanshu-blog.vercel.app/tags/reactjs/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
+    <guid>https://deepanshu-blog.vercel.app/blog/Tailwindcss-UI-components</guid>
+    <title>Tailwindcss UI components</title>
+    <link>https://deepanshu-blog.vercel.app/blog/Tailwindcss-UI-components</link>
+    <description>Tailwindcss UI components</description>
+    <pubDate>Mon, 07 Feb 2022 00:00:00 GMT</pubDate>
+    <author>kumardeepanshu157@gmail.com (kumar deepanshu)</author>
+    <category>reactjs</category><category>nextjs</category><category>tailwindcss</category><category>ui</category><category>responsive</category>
+  </item>
+
+  <item>
     <guid>https://deepanshu-blog.vercel.app/blog/responsive-navBar</guid>
     <title>Responsive NavBar using Tailwind-css and React</title>
     <link>https://deepanshu-blog.vercel.app/blog/responsive-navBar</link>
