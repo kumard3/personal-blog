@@ -13,6 +13,10 @@
   </url>
 
   <url>
+    <loc>https://deepanshu-blog.vercel.app/blog/Tailwindcss-UI-components</loc>
+  </url>
+
+  <url>
     <loc>https://deepanshu-blog.vercel.app/blog/nextjs-12-beast</loc>
   </url>
 
@@ -25,7 +29,7 @@
   </url>
 
   <url>
-    <loc>https://deepanshu-blog.vercel.app/tags/nextjs-</loc>
+    <loc>https://deepanshu-blog.vercel.app/tags/reactjs</loc>
   </url>
 
   <url>
@@ -33,14 +37,18 @@
   </url>
 
   <url>
+    <loc>https://deepanshu-blog.vercel.app/tags/nextjs-</loc>
+  </url>
+
+  <url>
     <loc>https://deepanshu-blog.vercel.app/tags/responsive</loc>
   </url>
 
   <url>
-    <loc>https://deepanshu-blog.vercel.app/tags/reactjs</loc>
+    <loc>https://deepanshu-blog.vercel.app/tags/tailwindcss</loc>
   </url>
 
   <url>
-    <loc>https://deepanshu-blog.vercel.app/tags/tailwindcss</loc>
+    <loc>https://deepanshu-blog.vercel.app/tags/ui</loc>
   </url>
 </urlset>
