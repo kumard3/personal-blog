@@ -25,19 +25,11 @@
   </url>
 
   <url>
-    <loc>https://deepanshu-blog.vercel.app/tags/navbar</loc>
-  </url>
-
-  <url>
-    <loc>https://deepanshu-blog.vercel.app/tags/reactjs</loc>
-  </url>
-
-  <url>
     <loc>https://deepanshu-blog.vercel.app/tags/nextjs</loc>
   </url>
 
   <url>
-    <loc>https://deepanshu-blog.vercel.app/tags/nextjs-</loc>
+    <loc>https://deepanshu-blog.vercel.app/tags/reactjs</loc>
   </url>
 
   <url>
@@ -49,6 +41,14 @@
   </url>
 
   <url>
+    <loc>https://deepanshu-blog.vercel.app/tags/nextjs-</loc>
+  </url>
+
+  <url>
     <loc>https://deepanshu-blog.vercel.app/tags/ui</loc>
+  </url>
+
+  <url>
+    <loc>https://deepanshu-blog.vercel.app/tags/navbar</loc>
   </url>
 </urlset>

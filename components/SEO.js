@@ -149,20 +149,6 @@ export const BlogSEO = ({ authorDetails, title, summary, date, lastmod, url, ima
             __html: JSON.stringify(structuredData, null, 2),
           }}
         />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6978760910049416"
-          crossOrigin="anonymous"
-        ></script>
-        <ins
-          className="adsbygoogle"
-          style="display:block; text-align:center;"
-          data-ad-layout="in-article"
-          data-ad-format="fluid"
-          data-ad-client="ca-pub-6978760910049416"
-          data-ad-slot="4041458848"
-        ></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
       </Head>
     </>
   )
