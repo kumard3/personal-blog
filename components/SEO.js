@@ -67,6 +67,8 @@ export const TagSEO = ({ title, description }) => {
           title={`${description} - RSS feed`}
           href={`${siteMetadata.siteUrl}${router.asPath}/feed.xml`}
         />
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6978760910049416"
+     crossorigin="anonymous"></script>
       </Head>
     </>
   )
@@ -143,12 +145,15 @@ export const BlogSEO = ({ authorDetails, title, summary, date, lastmod, url, ima
         {date && <meta property="article:published_time" content={publishedAt} />}
         {lastmod && <meta property="article:modified_time" content={modifiedAt} />}
         <link rel="canonical" href={`${siteMetadata.siteUrl}${router.asPath}`} />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6978760910049416"
+     crossorigin="anonymous"></script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(structuredData, null, 2),
           }}
         />
+
       </Head>
     </>
   )

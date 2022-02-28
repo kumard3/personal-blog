@@ -6,18 +6,10 @@ import { BlogSEO } from '@/components/SEO'
 import Image from '@/components/Image'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
-import Comments from '@/components/comments'
+
 import { useEffect, useRef, useState } from 'react'
 import LeftNav from '@/components/LeftNav'
 
-const twitterShare = (slug) =>
-  `https://twitter.com/intent/tweet?url=${encodeURIComponent(
-    `${siteMetadata.siteUrl}/blog/${slug}`
-  )}`
-const facebookShare = (slug) =>
-  `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-    `${siteMetadata.siteUrl}/blog/${slug}`
-  )}`
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
