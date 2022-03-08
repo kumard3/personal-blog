@@ -10,7 +10,6 @@ import siteMetadata from '@/data/siteMetadata'
 import { useEffect, useRef, useState } from 'react'
 import LeftNav from '@/components/LeftNav'
 
-
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children, toc }) {
