@@ -17,11 +17,27 @@
   </url>
 
   <url>
+    <loc>https://deepanshu-blog.vercel.app/blog/dev.ui-web3-template</loc>
+  </url>
+
+  <url>
     <loc>https://deepanshu-blog.vercel.app/blog/nextjs-12-beast</loc>
   </url>
 
   <url>
+    <loc>https://deepanshu-blog.vercel.app/blog/portfolio-template</loc>
+  </url>
+
+  <url>
     <loc>https://deepanshu-blog.vercel.app/blog/responsive-navBar</loc>
+  </url>
+
+  <url>
+    <loc>https://deepanshu-blog.vercel.app/tags/devui</loc>
+  </url>
+
+  <url>
+    <loc>https://deepanshu-blog.vercel.app/tags/navbar</loc>
   </url>
 
   <url>
@@ -33,6 +49,10 @@
   </url>
 
   <url>
+    <loc>https://deepanshu-blog.vercel.app/tags/nextjs-</loc>
+  </url>
+
+  <url>
     <loc>https://deepanshu-blog.vercel.app/tags/responsive</loc>
   </url>
 
@@ -41,14 +61,6 @@
   </url>
 
   <url>
-    <loc>https://deepanshu-blog.vercel.app/tags/nextjs-</loc>
-  </url>
-
-  <url>
     <loc>https://deepanshu-blog.vercel.app/tags/ui</loc>
-  </url>
-
-  <url>
-    <loc>https://deepanshu-blog.vercel.app/tags/navbar</loc>
   </url>
 </urlset>

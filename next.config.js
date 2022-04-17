@@ -1,3 +1,10 @@
+/** @type {import('next').NextConfig} */
+module.exports = {
+  images: {
+    domains: ['res.cloudinary.com'],
+  },
+}
+
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })

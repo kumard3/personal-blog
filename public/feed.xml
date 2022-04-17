@@ -7,9 +7,29 @@
       <language>en-us</language>
       <managingEditor>kumardeepanshu157@gmail.com (kumar deepanshu)</managingEditor>
       <webMaster>kumardeepanshu157@gmail.com (kumar deepanshu)</webMaster>
-      <lastBuildDate>Sun, 20 Feb 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sun, 17 Apr 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://deepanshu-blog.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://deepanshu-blog.vercel.app/blog/portfolio-template</guid>
+    <title>New Web3 UI Template </title>
+    <link>https://deepanshu-blog.vercel.app/blog/portfolio-template</link>
+    <description>A full responsive Portfolio Template made using next js and tailwindcss</description>
+    <pubDate>Sun, 17 Apr 2022 00:00:00 GMT</pubDate>
+    <author>kumardeepanshu157@gmail.com (kumar deepanshu)</author>
+    <category>reactjs</category><category>nextjs</category><category>tailwindcss</category><category>ui</category><category>responsive</category><category>Dev.UI</category>
+  </item>
+
+  <item>
+    <guid>https://deepanshu-blog.vercel.app/blog/dev.ui-web3-template</guid>
+    <title>New Web3 UI Template </title>
+    <link>https://deepanshu-blog.vercel.app/blog/dev.ui-web3-template</link>
+    <description>New Web3 UI Template for all the web3 developers made using next js and tailwindcss</description>
+    <pubDate>Sat, 09 Apr 2022 00:00:00 GMT</pubDate>
+    <author>kumardeepanshu157@gmail.com (kumar deepanshu)</author>
+    <category>reactjs</category><category>nextjs</category><category>tailwindcss</category><category>ui</category><category>responsive</category><category>Dev.UI</category>
+  </item>
+
   <item>
     <guid>https://deepanshu-blog.vercel.app/blog/responsive-navBar</guid>
     <title>Responsive NavBar using Tailwind-css and React</title>
@@ -25,16 +45,6 @@
     <title>Tailwindcss UI components</title>
     <link>https://deepanshu-blog.vercel.app/blog/Tailwindcss-UI-components</link>
     <description>Tailwindcss UI components</description>
-    <pubDate>Mon, 07 Feb 2022 00:00:00 GMT</pubDate>
-    <author>kumardeepanshu157@gmail.com (kumar deepanshu)</author>
-    <category>reactjs</category><category>nextjs</category><category>tailwindcss</category><category>ui</category><category>responsive</category>
-  </item>
-
-  <item>
-    <guid>https://deepanshu-blog.vercel.app/blog/dev.ui-web3-template</guid>
-    <title>New Web3 UI Template </title>
-    <link>https://deepanshu-blog.vercel.app/blog/dev.ui-web3-template</link>
-    <description>New Web3 UI Template </description>
     <pubDate>Mon, 07 Feb 2022 00:00:00 GMT</pubDate>
     <author>kumardeepanshu157@gmail.com (kumar deepanshu)</author>
     <category>reactjs</category><category>nextjs</category><category>tailwindcss</category><category>ui</category><category>responsive</category>
