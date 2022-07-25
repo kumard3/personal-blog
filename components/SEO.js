@@ -24,11 +24,6 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage }) => {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={twImage} />
-      <script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6978760910049416"
-        crossOrigin="anonymous"
-      ></script>
     </Head>
   )
 }
@@ -148,11 +143,6 @@ export const BlogSEO = ({ authorDetails, title, summary, date, lastmod, url, ima
         {date && <meta property="article:published_time" content={publishedAt} />}
         {lastmod && <meta property="article:modified_time" content={modifiedAt} />}
         <link rel="canonical" href={`${siteMetadata.siteUrl}${router.asPath}`} />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6978760910049416"
-          crossOrigin="anonymous"
-        ></script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
